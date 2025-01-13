@@ -9,11 +9,11 @@ public class TheUltimateFunctionsProject {
         System.out.println("Please provide your query:");
         String query = in.nextLine();
         int target;
-        if (query.equals("sort")) {
+        if (query.equals("search")) {
             System.out.println("Provide your target:");
             target = in.nextInt();
         }
-        else if (!query.equals("search")) {
+        else if (!query.equals("sort")) {
             System.out.println("Invalid query!");
             return;
         }
