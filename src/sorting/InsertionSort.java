@@ -5,8 +5,8 @@ import java.util.List;
 public class InsertionSort implements ISortAlgorithm{
 
     @Override
-    public List<Integer> sort(List<Integer> array) {
-        int n = array.size();
+    public List<Integer> sort(List<Integer> array, Integer lastIndex) {
+        int n = lastIndex;
         for (int i = 1; i < n; i++) {
             int key = array.get(i);
             int j = i - 1;
